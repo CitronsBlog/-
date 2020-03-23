@@ -1,0 +1,178 @@
+/*
+2020/03/23
+*/
+/*清除浏览器默认样式，可引入清除默认样式文件*/
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+}
+body{
+/*background-size：cover，这个CSS3的属性作用是把背景图像扩展至足够大，以使背景图像完全覆盖背景区域，背景图像的某些部分也许无法显示在背景定位区域中，如果不使用这个属性，在IE11和FireFox中缩放浏览器，背景图片会随之缩小，同时使用-webkit-background-size: cover和-o-background-size: cover兼容webkit内核浏览器和Opera浏览器；background-attachment属性设置背景图像是否固定或者随着页面的其余部分滚动，当设置为fixed时页面的其余部分滚动时，背景图像不会移动。*/
+    position:absolute;
+    background: url('/img/885.jpg') no-repeat 0 0/100%;
+    top:0;
+    left: 0;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: cover;
+    -webkit-background-size: cover;/* 兼容Webkit内核浏览器如Chrome和Safari */
+    -o-background-size: cover;/* 兼容Opera */
+   zoom: 1;    
+
+}
+.header_box{
+    min-width: 1000px;/*设置最小宽度*/
+    background: rgba(0, 0, 0, .2);
+    color: #fff;/*设置字体颜色为白色*/
+    overflow: hidden;/*清除浮动*/
+    font-size: 12px;
+    position: relative;
+    overflow: hidden;
+}
+.header_box a{
+    color: seashell;
+}
+.header_box .left_box{
+    padding: 8px 8px;
+    float: left;
+
+}
+ .more_box{
+    /*行内元素(inline)不会单独占一行，不能设置宽高*/
+    /*块级元素(block)单独占一行，可以设置宽高*/
+    /*行内块元素(inline-block)，不会单独占一行，可以设置宽高*/
+    display: inline-block;
+    background-color: #398bfb;
+    width: 86px;
+    height: 33px;
+    line-height: 32px;
+    text-align: center;
+    padding: 0 5px;
+}
+/*设置icon样式*/
+.w_icon{
+    background: url('/img/a2.png');
+    width: 18px;
+    height: 18px;
+    display: inline-block;/*设置成行内块元素*/
+    vertical-align: middle;/*放置父元素中部*/
+    margin-right: 5px;
+}
+.level{
+    color: springgreen;
+    font-weight: bold;
+     margin-left: 10px;
+}
+.line{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.header_box .left_box a{
+    margin: 0 12px;
+}
+
+
+.rightnav{
+    float: right;
+    position: relative;
+    
+}
+.rightnav>li{
+    float: left;
+    margin: 10px 10px;
+}
+.rightnav li:nth-child(1) a{
+    color: red;
+}
+.rightnav li:nth-child(8){
+    width: 50px;
+    margin-right: 20px;
+}
+/*logo*/
+.logo img{
+    width: 300px;
+    margin-left: 40%;
+    margin-top: 50px;
+}
+/*搜索框部分*/
+.input_box{
+    width: 641px;
+    margin-left: 30%;
+    position: relative;
+    margin-top: 15px;
+}
+.input_box input{
+    height: 40px;
+    width: 520px;
+    border: 0;
+    padding-left: 15px;
+}
+.input_box .search{
+    position: absolute;
+    width: 100px;
+    height: 40px;
+    background-color: #398bfb;
+    border: 0;
+    color: #fff;
+}
+.footer_box{
+    position: fixed;
+    width: 100%;
+    height: 25px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, .7);
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}
+.footer_box .left_box{
+    float: left;
+
+}
+.footer_box .left_box a{
+    text-decoration: none;
+    margin: 0 10px;
+    color: #999;
+    font-size: 10px;
+
+}
+.footer_box .right_box{
+    text-decoration: none;
+    line-height: 25px;
+    margin: 0 15px;
+    float: right;
+    color: #999;
+    font-size: 10px;
+}
+.footer_box .right_box span{
+   
+    line-height: 25px;
+    color: #999;
+    margin: 0 15px;
+    font-size: 10px;
+    
+
+}
+.footer_box .right_box a{
+    text-decoration: none;
+    line-height: 25px;
+    color: #999;
+    margin: 0 15px;
+    font-size: 10px;
+    text-decoration: none;
+
+}
+.footer_box  a:hover{
+    color: #000;
+}
